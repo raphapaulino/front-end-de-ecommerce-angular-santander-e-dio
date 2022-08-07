@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bookstore-front"
+    }
+  },
+  "defaultProject": "bookstore-front",
+  "cli": {
+    "analytics": false
+  }
 }
