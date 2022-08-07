@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from "@angular/core";
+import { Observable } from 'rxjs';
 import { Book } from './model/books.model';
 
 @Injectable({
@@ -7,8 +8,7 @@ import { Book } from './model/books.model';
 })
 export class BooksService
 {
-  // private url = "https://localhost:44382/api/bookstore";
-  private url = "http://localhost:3000/api";
+  private apiUrl = "http://localhost:3000/api";
 
   httpOptions = {
     Headers: new HttpHeaders({
@@ -16,9 +16,9 @@ export class BooksService
     })
   }
 
-  constructor(private http:HttpClient) {}
+  constructor(private httpClient: HttpClient) {}
 
-  getBook() {
-    return this.http.get(this.url);
+  getBooks(): Observable<Book[]> {
+    return this.httpClient.get<Book[]>(this.apiUrl);
   }
 }
