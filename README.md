@@ -1,27 +1,106 @@
-# BookstoreFront
+# Front-end de um E-Commerce Angular com Santander e DIO
+Esse projeto foi criado para atender a entrega do desafio "Como criar um front-end de um e-commerce utilizando Angular" do Bootcamp Santander Fullstack na plataforma da DIO <br><br>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.3.
+# Observações
 
-## Development server
+## Sobre as configurações utilizadas para criar e testar este projeto <br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<br>
 
-## Code scaffolding
+**Angular**
+```
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular CLI: 10.2.3
+Node: 14.18.2
+OS: linux x64
 
-## Build
+Angular: 
+... 
+Ivy Workspace: 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1002.3 (cli-only)
+@angular-devkit/core         10.2.3 (cli-only)
+@angular-devkit/schematics   10.2.3 (cli-only)
+@schematics/angular          10.2.3 (cli-only)
+@schematics/update           0.1002.3 (cli-only)
+```
 
-## Running unit tests
+**IDE**
+```
+Visual Studio Code
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Version: 1.69.2
+Commit: 3b889b090b5ad5793f524b5d1d39fda662b96a2a
+Date: 2022-07-18T16:14:10.636Z
+Electron: 18.3.5
+Chromium: 100.0.4896.160
+Node.js: 16.13.2
+V8: 10.0.139.17-electron.0
+OS: Linux x64 5.15.0-43-generic
+```
 
-## Running end-to-end tests
+**OS**
+```
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.4 LTS
+Release:	    20.04
+Codename:	    focal
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+<br>
 
-## Further help
+## Como executar o projeto? <br>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Após clonar este repositório e baixar suas dependências (via NPM), abrir o terminal na raiz do projeto e:
+
+Subir a API
+
+```
+json-server --watch db.json
+```
+
+Subir a aplicação
+
+```
+ng serve
+```
+
+Em seguida abrir no navegador o seguinte endereço:
+
+```
+http://localhost:4200
+```
+
+<br>
+
+# Agradecimentos
+
+<br>
+
+Deixo aqui meus agradecimentos ao [Santander Bolsas](https://www.becas-santander.com/pt_br/index.html) e a [DIO](https://www.dio.me/) pelo privilégio de ser aceito e poder participar desse programa de estudos que me acrescentou muito conhecimento e que com certeza vou aplicá-los em minha carreira profissional! 
+
+<br>
+
+# Contatos
+Meu contato principal:  [Raphael Paulino - Gmail](mailto:raphael.paulino.web@gmail.com) <br>
+Faça Parte da Minha Rede: [Meu LinkedIn](https://www.linkedin.com/in/raphaelalvespaulino/) <br>
+Meu Portfólio: [raphaelpaulino.com.br](https://www.raphaelpaulino.com.br/) 
+
+<br>
+
+# Referências
+Angular:  [https://angular.io](https://angular.io) <br>
+Angular CLI: [https://angular.io/cli](https://angular.io/cli) <br>
+JSON Server:  [https://github.com/typicode/json-server](https://github.com/typicode/json-server) <br>
+Visual Studio Code: [VS Code](https://code.visualstudio.com/) <br>
+Ubuntu: [Ubuntu 20.04.4 LTS (Focal Fossa)](https://releases.ubuntu.com/20.04.4/)
